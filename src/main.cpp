@@ -28,8 +28,6 @@ void interpolate_image(float *src, uint8_t src_rows, uint8_t src_cols,
 float get_point(float *p, uint8_t rows, uint8_t cols, int8_t x, int8_t y) ;
 
 Adafruit_AMG88xx amg;
-unsigned long delayTime;
-uint16_t displayPixelWidth, displayPixelHeight;
 
 // low range of the sensor (this will be blue on the screen)
 float mintemp = 24;    // For color mapping
@@ -300,8 +298,6 @@ const uint16_t camColors[] = {
     0xF020,
     0xF800,
 };
-
-
 
 void drawpixels(float *p, uint8_t rows, uint8_t cols)
 {
